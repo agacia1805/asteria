@@ -1,0 +1,29 @@
+:global {
+  //
+  // Hide elements from all users.
+  //
+  // Used for elements which should not be immediately displayed to any user.
+  //
+  .hidden {
+    display: none;
+  }
+
+  //
+  // Hide elements visually, but keep them available for screen-readers.
+  //
+  // Used for information required for screen-reader users to understand and use
+  // the site where visual display is undesirable. Information provided in this
+  // manner should be kept concise, to avoid unnecessary burden on the user.
+  // "!important" is used to prevent unintentional overrides.
+  //
+  .visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+  }
+}

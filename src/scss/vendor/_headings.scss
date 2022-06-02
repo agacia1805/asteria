@@ -1,0 +1,34 @@
+@mixin heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin heading-1 {
+  @include heading;
+  font-size: 1.875rem;
+}
+
+@mixin heading-2 {
+  @include heading;
+  font-size: 1.5rem;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 1.25rem;
+}
+
+@mixin heading-4 {
+  @include heading;
+  font-size: 0.75rem;
+}
+
+@mixin heading-5 {
+  @include heading-4;
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 0.625rem;
+}
