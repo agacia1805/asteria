@@ -1,0 +1,54 @@
+{
+    "extends": [
+        "stylelint-config-recommended-scss",
+        "stylelint-config-css-modules"
+    ],
+    "rules": {
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": [
+                    "value"
+                ]
+            }
+        ],
+        "no-descending-specificity": null,
+        "no-empty-source": null,
+        "block-no-empty": null,
+        "shorthand-property-no-redundant-values": true,
+        "number-leading-zero": "always",
+        "selector-combinator-space-before": "always",
+        "selector-combinator-space-after": "always",
+        "selector-descendant-combinator-no-non-space": true,
+        "declaration-colon-space-after": "always-single-line",
+        "declaration-colon-space-before": "never",
+        "rule-empty-line-before": [
+            "always",
+            {
+                "except": [
+                    "first-nested"
+                ],
+                "ignore": [
+                    "after-comment"
+                ]
+            }
+        ],
+        "unit-case": "lower",
+        "unit-no-unknown": true,
+        "property-no-unknown": [
+            true,
+            {
+                "ignoreProperties": [
+                    "composes",
+                    "compose-with",
+                    "font-smoothing"
+                ],
+                "ignoreSelectors": [
+                    ":export",
+                    "/^:import/"
+                ]
+            }
+        ]
+    }
+}

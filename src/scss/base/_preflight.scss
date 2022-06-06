@@ -96,9 +96,9 @@ html {
 *,
 ::before,
 ::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
   border-style: solid; /* 2 */
+  border-width: 0; /* 2 */
+  box-sizing: border-box; /* 1 */
 }
 
 /*
@@ -174,9 +174,9 @@ input,
 optgroup,
 select,
 textarea {
-  padding: 0;
-  line-height: inherit;
   color: inherit;
+  line-height: inherit;
+  padding: 0;
 }
 
 /**
@@ -208,6 +208,6 @@ object {
 
 img,
 video {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
