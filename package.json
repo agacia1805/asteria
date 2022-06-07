@@ -1,14 +1,19 @@
 {
-    "name": "my-webpack-project",
+    "homepage": "https://github.com/agacia1805/project-bibbidi-bobbidi-boo",
+    "name": "project-bibbidi-bobbidi-boo",
     "version": "1.0.0",
     "private": true,
+    "author": "Fairy Ann",
     "dependencies": {
+        "@babel/plugin-syntax-jsx": "^7.17.12",
+        "@babel/preset-react": "^7.17.12",
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^13.0.0",
         "@testing-library/user-event": "^13.2.1",
         "classnames": "^2.3.1",
         "compression": "^1.7.4",
         "file-loader": "^6.2.0",
+        "gh-pages": "^4.0.0",
         "react": "^18.1.0",
         "react-collapsible": "^2.9.0",
         "react-dom": "^18.1.0",
@@ -23,10 +28,13 @@
         "react-refresh": "^0.13.0",
         "react-refresh-typescript": "^2.0.4",
         "react-responsive": "^9.0.0-beta.10",
+        "react-router-dom": "^6.3.0",
         "react-scripts": "5.0.1",
+        "react-store-adapter": "^0.4.4",
         "redux-actions": "^2.6.5",
         "redux-thunk": "^2.4.1",
         "stylelint-scss": "^4.2.0",
+        "typescript": "^4.7.3",
         "web-vitals": "^2.1.0"
     },
     "scripts": {
@@ -37,7 +45,9 @@
         "build:dev": "webpack --mode=development",
         "build:prod": "webpack --mode=production --node-env=production",
         "watch": "webpack --watch",
-        "serve": "webpack serve"
+        "serve": "webpack serve",
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -58,7 +68,7 @@
         ]
     },
     "devDependencies": {
-        "@babel/core": "^7.18.0",
+        "@babel/core": "^7.18.2",
         "@babel/preset-env": "^7.18.0",
         "@types/classnames": "^2.3.1",
         "@types/react": "^18.0.12",

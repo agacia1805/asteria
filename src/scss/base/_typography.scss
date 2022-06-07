@@ -1,0 +1,33 @@
+@use '../resources/fonts' as font;
+
+@font-face {
+  font-display: swap;
+  font-family: font.$font-family--base;
+  font-style: normal;
+  font-weight: font.$font-weight--light;
+  src: url('/src/assets/fonts/Roboto/Roboto-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: font.$font-family--base;
+  font-style: normal;
+  font-weight: font.$font-weight--regular;
+  src: url('/src/assets/fonts/Roboto/Roboto-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: font.$font-family--base;
+  font-style: normal;
+  font-weight: font.$font-weight--medium;
+  src: url('/src/assets/fonts/Roboto/Roboto-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: font.$font-family--base;
+  font-style: normal;
+  font-weight: font.$font-weight--bold;
+  src: url('/src/assets/fonts/Roboto/Roboto-Bold.ttf') format('ttf');
+}
