@@ -1,15 +1,15 @@
 {
-    "short_name": "Bibbidi Bobbidi Boo",
-    "name": "Bibbidi Bobbidi Boo",
-    //    "icons": [
-    //        //    {
-    //        //      "src": "favicon.ico",
-    //        //      "sizes": "64x64 32x32 24x24 16x16",
-    //        //      "type": "image/x-icon"
-    //        //    },
-    //    ],
+    "short_name": "Asteria",
+    "name": "Asteria",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        }
+    ],
     "start_url": ".",
-    "description": "Bibbidi bobbidi boo, it's your time for magic!",
+    "description": "Asteria, home of the immortals.",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
