@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeadProvider, Title } from 'react-head';
-import globalCSS from './scss/base/index.scss';
+// import globalCSS from './scss/base/index.scss';
 
 // import Main from '';
 // import Mask from 'react-input-mask';
@@ -25,6 +25,6 @@ App.propTypes = {};
 
 App.displayName = 'App';
 
-App.globalCSS = globalCSS;
+// App.globalCSS = globalCSS;
 
 export default App;
