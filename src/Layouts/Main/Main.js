@@ -11,7 +11,7 @@ const Main = () => {
             {/*<SeoHead />*/}
             <section>
                 {/*<Container>*/}
-                <span> © {new Date().getFullYear()} Helly Hansen</span>
+                <span> © {new Date().getFullYear()} Asteria</span>
                 {/*</Container>*/}
             </section>
         </main>

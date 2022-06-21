@@ -1,6 +1,6 @@
 import React from 'react';
-import { Title } from 'react-head';
-import { HelmetProvider as HeadProvider } from 'react-helmet-async';
+import { HeadProvider, Title } from 'react-head';
+import Main from 'Layouts/Main/Main';
 
 // import globalCSS from './scss/base/index.scss';
 // import Main from '';
@@ -9,9 +9,7 @@ const App = () => {
     return (
         <HeadProvider>
             <Title>Asteria</Title>
-            <div>Asteria here</div>
-            {/*<Main>*/}
-            {/*</Main>*/}
+            <Main />
         </HeadProvider>
     );
 };
