@@ -1,0 +1,76 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "ES2019",
+        "module": "esnext",
+        "strict": false,
+        "allowJs": true,
+        "importHelpers": false,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": false,
+        "sourceMap": true,
+        "downlevelIteration": true,
+        "skipLibCheck": true,
+        "baseUrl": "./src",
+        "strictNullChecks": true,
+        "noImplicitAny": false,
+
+        "paths": {
+            "Assets": [
+                "src/Assets"
+            ],
+            "Components": [
+                "src/Components"
+            ],
+            "Layouts": [
+                "src/Layouts"
+            ],
+            "Pages": [
+                "src/Pages"
+            ],
+            "Routes": [
+                "src/Routes"
+            ],
+            "scss": [
+                "src/scss"
+            ]
+        },
+
+        "types": [
+            "node",
+            "webpack-env",
+            "lodash/set",
+            "lodash/get"
+        ],
+
+        "lib": [
+            "es2017",
+            "dom",
+            "dom.iterable"
+        ],
+
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "resolve": {
+        "extensions": [
+            ".ts",
+            ".tsx",
+            ".js"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "commonjs"
+        }
+    }
+}

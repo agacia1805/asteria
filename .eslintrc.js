@@ -139,7 +139,7 @@ module.exports = {
                 // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
             ],
             parserOptions: {
-                project: ['./tsconfig.json'],
+                project: ['tsconfig.json'],
             },
             rules: {
                 // Consistent brace style

@@ -18,6 +18,7 @@ const config = {
     module: {
         rules: [
             {
+                exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: { presets: ['@babel/env', '@babel/preset-react'] },
                 test: /\.(js|jsx)$/i,
@@ -68,14 +69,15 @@ module.exports = (nv) => {
 module.exports = {
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, 'src'),
-            '@Assets': path.resolve(__dirname, 'src/Assets'),
-            '@Components': path.resolve(__dirname, 'src/Components'),
-            '@Layouts': path.resolve(__dirname, 'src/Layouts'),
-            '@Pages': path.resolve(__dirname, 'src/Pages'),
-            '@Routes': path.resolve(__dirname, 'src/Routes'),
-            '@scss': path.resolve(__dirname, 'src/scss'),
+            // '@': path.resolve(__dirname, 'src/'),
+            Assets: path.resolve(__dirname, 'src/Assets'),
+            Components: path.resolve(__dirname, 'src/Components'),
+            Layouts: path.resolve(__dirname, 'src/Layouts'),
+            Pages: path.resolve(__dirname, 'src/Pages'),
+            Routes: path.resolve(__dirname, 'src/Routes'),
+            scss: path.resolve(__dirname, 'src/scss'),
         },
-        extensions: ['js', 'ts'],
+
+        // extensions: ['.js', '.ts', '.jsx', '.tsx'],
     },
 };
