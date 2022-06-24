@@ -1,0 +1,19 @@
+.root {
+  margin: auto;
+  max-width: $max-screen-width;
+  padding: 0 $mobile-page-gutter;
+  width: 100%;
+
+  @include media('>tablet') {
+    padding: 0 $desktop-page-gutter;
+  }
+}
+
+.small {
+  max-width: 80rem;
+}
+
+.xsmall {
+  max-width: 52rem;
+}
+
